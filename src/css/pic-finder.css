@@ -1,0 +1,10 @@
+.pic-finder-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.pic-finder-btn {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+}

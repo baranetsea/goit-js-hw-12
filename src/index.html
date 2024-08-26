@@ -8,16 +8,28 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <h1>Pic finder</h1>
+    <!-- Path to images as from index.html file -->
+    <img src="./img/javascript.svg" alt="" />
+    <section class="gallery-section">
+      <div class="container">
+        <form class="pic-finder-form search-form js-search-form">
+          <input
+            class="search-input js-search-input"
+            type="text"
+            name="user_query"
+            required
+          />
+          <button class="pic-finder-btn search-btn" type="submit">FIND</button>
+        </form>
+        <ul class="gallery js-gallery"></ul>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+        <button class="is-hidden load-more" type="button">Load more</button>
 
-    <load src="./partials/footer.html" />
+        <span class="loader js-loader is-hidden"></span>
+      </div>
+    </section>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
