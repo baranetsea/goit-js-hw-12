@@ -27,6 +27,19 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.load-more {
+  width: 150px;
+  height: 40px;
+  display: block;
+  background-color: aquamarine;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+
 .pic-finder-form {
   display: flex;
   gap: 10px;
@@ -138,16 +151,3 @@
 .is-hidden {
   display: none;
 }
-
-/* .load-more {
-  width: 150px;
-  height: 40px;
-  display: block;
-  background-color: aquamarine;
-  border: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
-} */
