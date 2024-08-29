@@ -53,7 +53,7 @@ const onSearchFormSubmit = async event => {
 
     galleryEl.innerHTML = galleryCardsTemplate;
 
-    smoothScroll();
+    // smoothScroll();
 
     lightbox.refresh();
 

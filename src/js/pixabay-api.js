@@ -14,6 +14,9 @@ export const fetchPhotos = async (searchQuery, page) => {
   });
 
   const { data } = await axios.get(`${BASE_URL}?${urlParams}`);
+  if (fetchPhotos.length === 0) {
+    loadMoreBtn.classList.add('is-hidden');
+  }
 
   return data;
 };
