@@ -74,7 +74,9 @@ const onLoadMore = async () => {
   loaderEl.classList.remove('is-hidden');
   try {
     const data = await fetchPhotos(searchValue, currentPage);
-
+    if (fetchPhotos.length === 0) {
+      loadMoreBtn.classList.add('is-hidden');
+    }
     const galleryCardsTemplate = data.hits
       .map(imgDetails => createGalleryCardTemplate(imgDetails))
       .join('');
